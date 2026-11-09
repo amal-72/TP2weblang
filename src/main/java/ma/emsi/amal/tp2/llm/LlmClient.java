@@ -25,7 +25,7 @@ public class LlmClient implements Serializable {
 
         ChatModel model = GoogleGenAiChatModel.builder()
                 .apiKey(apiKey)
-                .modelName("gemini-3.8-flash")
+                .modelName("gemini-3.5-flash-lite")
                 .build();
 
         chatMemory = MessageWindowChatMemory.withMaxMessages(20);
